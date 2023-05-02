@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS massage_db;
+
+CREATE DATABASE massage_db;
