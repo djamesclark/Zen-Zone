@@ -1,40 +1,62 @@
-<!DOCTYPE html>
-<html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zen Zone</title>
+  <title>Massage Services</title>
+  <style>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
-
+  </style>
 </head>
-
 <body>
-    <header>
-        <section class="hero is-small is-primary">
-            <div class="level hero-body">
-                <div>
-                    <p class="title">
-                        Zen Zone
-                    </p>
-                </div>
-            </div>
-            <nav class="navbar" role="navigation" aria-label="main navigation">
-                <div id="navbarBasicExample" class="navbar-menu">
-                    <a class="navbar-item" href="/">Home</a>
-                    <a class="navbar-item" href="/services">Services</a>
-                    <a class="navbar-item" href="/articles">Health and Wellness</a>
-                    <a class="navbar-item" href="/aboutus">About Us</a>
-                    <a class="navbar-item" href="/bios">Therapist Biographies</a>
-                    {{#if loggedIn}}
-                    <button id="logout" class="button">Logout</button>
-                    {{else}}
-                    <a class="navbar-item" href="/login">Login</a>
-                    {{/if}}
-                </div>
-            </nav>
-        </section>
-    <main>
-        <!--services and pricing--> 
-    </main>
+  <div id="services-container"></div>
+
+  <script id="services-template" type="text/x-handlebars-template">
+    {{#each services}}
+      <div class="service">
+        <h3>{{title}}</h3>
+        <p>{{description}}</p>
+        <p>Duration: {{duration}} minutes</p>
+        <p>Price: ${{price}}</p>
+      </div>
+    {{/each}}
+  </script>
+
+  <script>
+    // Define the data for your massage services
+    let data = {
+      services: [
+        {
+          title: "Swedish Massage",
+          description: "Relaxing massage technique that uses long, gliding strokes.",
+          duration: 60,
+          price: 60
+        },
+        {
+          title: "Deep Tissue Massage",
+          description: "Targets deeper layers of muscles and connective tissue to relieve chronic pain.",
+          duration: 90,
+          price: 90
+        },
+        {
+          title: "Hot Stone Massage",
+          description: "Uses smooth, heated stones to relax muscles and improve circulation.",
+          duration: 75,
+          price: 80
+        }
+          title: "boopdeboop"
+        // Add more services 
+      ]
+    };
+
+    // Get the HTML template
+    let templateSource = document.getElementById("services-template").innerHTML;
+
+    // Compile the template
+    let template = Handlebars.compile(templateSource);
+
+    // Render the template with the data
+    let renderedTemplate = template(data);
+
+    // Insert the rendered template into the container element
+    let container = document.getElementById("services-container");
+    container.innerHTML = renderedTemplate;
+  </script>
+</body>
