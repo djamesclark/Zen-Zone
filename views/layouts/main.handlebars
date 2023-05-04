@@ -28,7 +28,7 @@
                     <a class="navbar-item" href="/aboutus">About Us</a>
                     <a class="navbar-item" href="/bios">Therapist Biographies</a>
                     {{#if loggedIn}}
-                    <button id="logout" class="button">Logout</button>
+                    <a id="logout" class="navbar-item">Logout</a>
                     {{else}}
                     <a class="navbar-item" href="/login">Login</a>
                     {{/if}}
@@ -44,7 +44,7 @@
         </div>
     </main>
     {{#if loggedIn}}
-    <script src="/js/logout.js"></script>
+    <script src=""></script>
     {{/if}}
 </body>
 
