@@ -1,3 +1,2 @@
-DROP DATABASE IF EXISTS massage_db;
-
-CREATE DATABASE massage_db;
+DROP DATABASE IF EXISTS user_db;
+CREATE DATABASE user_db;
