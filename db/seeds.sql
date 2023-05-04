@@ -19,7 +19,7 @@ VALUES
 ('Thai Massage 60 minutes', '$100.00'),
 ('Thai Massage 90 minutes', '$200.00');
 
-INSERT INTO employees 
+INSERT INTO employees
 VALUES ('Jen White', 'Licensed Massage Therapist', '$40.00/hr', '01/01/2020'),
 ('Casper Alstone', 'Licensed Massage Therapist', '$40.00/hr', '10/21/2017'),
 ('Peyton Smith', 'Licensed Massage Therapist', '$40.00/hr', '08/13/2019'),
@@ -32,3 +32,17 @@ VALUES ('Jen White', 'Licensed Massage Therapist', '$40.00/hr', '01/01/2020'),
 ('Lilly Atkinson', 'Customer Service','$15.00', '01/19/2018'),
 ('April Teller', 'Management Service', '$18.00/hr', '10/20/2017'),
 ('Janet Reeves', 'Management Service', '$18.00/hr', '01/19/2018');
+
+INSERT INTO login_id
+VALUES ('Jen White', 'JenWH@gmail.com', '34567','2023/05/04'),
+('Casper Alston', 'friendlyghost@gmail.com', '123476','2023/05/04'),
+('Peyton Smith', 'speedy@gmail.com', '89705', '2023/05/04'),
+('Alex Barnhart', 'XBarn@gmail.com', '67890', '2023/05/04'),
+('Andrew Chase', 'CTemp@gmail.com', '54567', '2023/05/04'),
+('Crystal Just', 'TRex@gmail.com', '439405', '2023/05/04'),
+('Brendon Bolin', 'Pinz@gmail.com', '098764', '2023/05/04'),
+('Kim Demark', 'KDemark@gmail.com', '493092', '2023/05/04'),
+('Jessica Jones', 'JJones@gmail.com', '876543', '2023/05/04'),
+('Lilly Atkinson', 'LillyA@gmail.com', '785432', '2023/05/04'),
+('April Teller','AprilT@gmail.com', '456768', '2023/05/04'),
+('Janet Reeves', 'JReeves@gmail.com', '102933', '2023/05/04');

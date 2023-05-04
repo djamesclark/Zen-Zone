@@ -9,4 +9,10 @@ CREATE TABLE services(
 CREATE TABLE employees(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
     name VARCHAR(50),title VARCHAR(25),
-    wages VARCHAR(25), hired VARCHAR(25));
+    wages VARCHAR(25), hire DATE);
+
+CREATE TABLE login_id(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50), email VARCHAR(50),
+    password VARCHAR (25), date);
+
