@@ -23,7 +23,7 @@ async function getUserEvents(token) {
 const data = new URLSearchParams({
   'grant_type': 'client_credentials',
   'client_id': 'ceGHF6sBpUtIX1y0OTpPIJzZOWPScZpt-EYECQpDa3g',
-  'client_secret': 'YOUR_CLIENT_SECRET'
+  'client_secret': 'WRZ21ObCVO6Gkb4OGCKzvUgg21JWMbuLrMShWxBqbs'
 });
 
 const response = await fetch(url, {
@@ -37,7 +37,7 @@ const response = await fetch(url, {
 const result = await response.json();
 const accessToken = result.access_token;
 
-const token = 'YOUR_ACCESS_TOKEN';
+const token = '7cLd59dcpFIBoQEul082TR4kh7JVPkI4xbk5J4sLLbQ';
 getUserEvents(token).then(data => {
   console.log(data);
 }).catch(error => {
