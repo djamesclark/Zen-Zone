@@ -1,5 +1,4 @@
 
-
 [Placeholder for app logo](https://placehold.co/600x400/EEE/31343C)
 Massage therapy scheduling app.
 
@@ -27,6 +26,12 @@ Zen Zone is the ultimate app for those looking for relief through massage therap
 ## Built With
 
 //will feature all frameworks used to build app 
+
+API: https://api.calendly.com
+
+Heroku
+
+
 
 ## Future Usage 
 
