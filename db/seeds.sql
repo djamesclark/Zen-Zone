@@ -19,21 +19,21 @@ VALUES
 ('Thai Massage 60 minutes', '$100.00'),
 ('Thai Massage 90 minutes', '$200.00');
 
-INSERT INTO employees
-VALUES ('Jen White', 'Licensed Massage Therapist', '$40.00/hr', '01/01/2020'),
-('Casper Alstone', 'Licensed Massage Therapist', '$40.00/hr', '10/21/2017'),
-('Peyton Smith', 'Licensed Massage Therapist', '$40.00/hr', '08/13/2019'),
-('Alex Barnhart','Licensed Massage Therapist', '$40.00/hr', '03/15/2020'),
-('Andrew Chase', 'Licensed Massage Therapist', '$40.00/hr', '05/17/2019'),
-('Crystal Just', 'Licensed Massage Therapist', '$40.00/hr', '03/15/2020'),
-('Brendon Bolin', 'Customer Service', '$15.00/hr', '10/20/2017'),
-('Kim Demark', 'Customer Service', '$15.00/hr', '10/20/2017'),
-('Jessica Jones', 'Customer Service','$15.00', '01/19/2018'),
-('Lilly Atkinson', 'Customer Service','$15.00', '01/19/2018'),
-('April Teller', 'Management Service', '$18.00/hr', '10/20/2017'),
-('Janet Reeves', 'Management Service', '$18.00/hr', '01/19/2018');
+INSERT INTO employees (fullname,title,wages,hire)
+VALUES ('Jen White', 'Licensed Massage Therapist', '$40.00/hr', '2020/01/01'),
+('Casper Alstone', 'Licensed Massage Therapist', '$40.00/hr', '2017/10/21'),
+('Peyton Smith', 'Licensed Massage Therapist', '$40.00/hr', '2019/08/13'),
+('Alex Barnhart','Licensed Massage Therapist', '$40.00/hr', '2020/03/15'),
+('Andrew Chase', 'Licensed Massage Therapist', '$40.00/hr', '2019/05/17'),
+('Crystal Just', 'Licensed Massage Therapist', '$40.00/hr', '2020/03/15'),
+('Brendon Bolin', 'Customer Service', '$15.00/hr', '2017/10/20'),
+('Kim Demark', 'Customer Service', '$15.00/hr', '2017/10/20'),
+('Jessica Jones', 'Customer Service','$15.00', '2018/01/19'),
+('Lilly Atkinson', 'Customer Service','$15.00', '2018/01/19'),
+('April Teller', 'Management Service', '$18.00/hr', '2017/10/20'),
+('Janet Reeves', 'Management Service', '$18.00/hr', '2018/01/19');
 
-INSERT INTO login_id
+INSERT INTO login_id (fullname,email,pwd,creation)
 VALUES ('Jen White', 'JenWH@gmail.com', '34567','2023/05/04'),
 ('Casper Alston', 'friendlyghost@gmail.com', '123476','2023/05/04'),
 ('Peyton Smith', 'speedy@gmail.com', '89705', '2023/05/04'),

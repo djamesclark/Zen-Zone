@@ -1,18 +1,18 @@
 DROP DATABASE IF EXISTS user_db;
 CREATE DATABASE user_db;
 
-USE DATABASE user_db;
+USE user_db;
 
 CREATE TABLE services(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
      type VARCHAR(50), price VARCHAR(50));
 CREATE TABLE employees(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-    name VARCHAR(50),title VARCHAR(25),
-    wages VARCHAR(25), hire DATE);
+    fullname VARCHAR(50),title VARCHAR(100),
+    wages VARCHAR(25), hire DATE NOT NULL);
 
 CREATE TABLE login_id(
     id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(50), email VARCHAR(50),
-    password VARCHAR (25), date);
+    fullname VARCHAR(50), email VARCHAR(50),
+    pwd VARCHAR (25), creation DATE);
 
