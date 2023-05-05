@@ -1,9 +1,5 @@
 <head>
   <title>Massage Services</title>
-  <style>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
-  </style>
 </head>
 <body>
   <div id="services-container"></div>
@@ -20,42 +16,62 @@
   </script>
 
   <script>
-    // Define the data for your massage services
+    // Define massage services
     let data = {
       services: [
         {
           title: "Swedish Massage",
           description: "Relaxing massage technique that uses long, gliding strokes.",
-          duration: 60,
-          price: 60
+          duration: 30,
+          price: 50
         },
         {
           title: "Deep Tissue Massage",
           description: "Targets deeper layers of muscles and connective tissue to relieve chronic pain.",
-          duration: 90,
-          price: 90
+          duration: 30,
+          price: 50
         },
         {
           title: "Hot Stone Massage",
           description: "Uses smooth, heated stones to relax muscles and improve circulation.",
-          duration: 75,
-          price: 80
-        }
-          title: "boopdeboop"
-        // Add more services 
+          duration: 60,
+          price: 100
+        },
+        {
+          title: "Aromatherapy Massage",
+          description: "Combines massage techinques with essential oils to enhance relation and promote stress relief, mood, and improved sleep.",  
+          duration: 30,
+          price: 50
+        },
+        {
+          title: "Ashiatsu Massage",
+          description: "A barefoot massage technique where the therapist can deliver deep, broad, consistent pressure.",
+          duration: 60,
+          price: 100
+        },
+        {
+          title: "Thai Massage",
+          description: "Incorporates assisted stretching, acupressure, and deep compression to improve flexibility, relieve muscle tension, and promote relaxation.",
+          duration: 60,
+          price: 100
+        },
+        {
+          title: "Relexology Massage",
+          description: "Focuses on applying pressure to specific reflex points on the hands, feet, and ears, which corresponds to different organs and systems in the body.",
+          duration: 30,
+          price: 50
+        },
       ]
     };
 
-    // Get the HTML template
+    // HTML template?
     let templateSource = document.getElementById("services-template").innerHTML;
-
-    // Compile the template
+  
     let template = Handlebars.compile(templateSource);
 
-    // Render the template with the data
     let renderedTemplate = template(data);
 
-    // Insert the rendered template into the container element
+    // Insert the template into the container
     let container = document.getElementById("services-container");
     container.innerHTML = renderedTemplate;
   </script>
