@@ -9,12 +9,12 @@ Zen Zone is the ultimate app for those looking for relief through massage therap
 
 
 ## Demo 
-//link to deployed app in Heroku will be placed here 
+// screenshots from the site
 
 
 
 ## Site
-//will feature screenshots from the website 
+https://zen-zone.herokuapp.com/
 
 
 ## Mobile Support
@@ -42,12 +42,10 @@ Wireframe: https://www.figma.com/file/VzF8BIoswKAuF9hkVCqvw3/Zen-Zone?type=desig
 //will list app features we'd like to add at a later time 
 
 ## Team 
-Danny Clark - https://github.com/djamesclark
-RJ Evans - https://github.com/Are-Jae
-
-Stephanie Simmons - https://github.com/ssimmons122 
-Catherine Sinkowski - https://github.com/CatSink
-
+Danny Clark - https://github.com/djamesclark <br>
+RJ Evans - https://github.com/Are-Jae <br>
+Stephanie Simmons - https://github.com/ssimmons122 <br> 
+Catherine Sinkowski - https://github.com/CatSink <br>
 
 
 ## License 
