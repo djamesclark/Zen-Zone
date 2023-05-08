@@ -17,4 +17,12 @@ body {
     min-height: 600px;
   }
 
+  .container {
+    border-left: 10px;
+    padding-left: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif rgb(161, 34, 215);
+    font-size: large;
+    text-align: center;
+  }
+
   
