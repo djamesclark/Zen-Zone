@@ -1,0 +1,20 @@
+a {
+    color: var(--dark);
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
+body {
+    background-image: url("/images/Background-Sunset.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: 10;
+    min-height: 600px;
+  }
+
+  
