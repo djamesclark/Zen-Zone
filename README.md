@@ -1,5 +1,5 @@
 
-(![Zen Zone Logo](public/css/ZenZone.jpg))
+![Zen Zone Logo](public/images/ZenZone.jpg)
 Massage therapy scheduling app.
 
 
