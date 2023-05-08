@@ -1,12 +1,17 @@
+<link rel="stylesheet" type="text/css" href="/css/services.css" />
+<html lang="en">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
 <head>
-  <title>Massage Services</title>
+   <title>Massage Services</title>
 </head>
 <body>
   <div id="services-container"></div>
 
   <script id="services-template" type="text/x-handlebars-template">
     {{#each services}}
-      <div class="service">
+      <div id="service">
         <h3>{{title}}</h3>
         <p>{{description}}</p>
         <p>Duration: {{duration}} minutes</p>
@@ -65,14 +70,14 @@
     };
 
     // HTML template?
-    let templateSource = document.getElementById("services-template").innerHTML;
+    let templateSource = document.getElementById("services").innerHTML;
   
     let template = Handlebars.compile(templateSource);
 
     let renderedTemplate = template(data);
 
     // Insert the template into the container
-    let container = document.getElementById("services-container");
+    let container = document.getElementById("services");
     container.innerHTML = renderedTemplate;
   </script>
 </body>
