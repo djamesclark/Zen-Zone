@@ -1,4 +1,4 @@
-//Calendly API (where will I place it? Services?)
+//Calendly API 
 
 async function getUserEvents(token) {
     const headers = {
