@@ -11,7 +11,7 @@
 
   <script id="services-template" type="text/x-handlebars-template">
     {{#each services}}
-      <div class="service">
+      <div id="service">
         <h3>{{title}}</h3>
         <p>{{description}}</p>
         <p>Duration: {{duration}} minutes</p>
@@ -70,14 +70,14 @@
     };
 
     // HTML template?
-    let templateSource = document.getElementById("services-template").innerHTML;
+    let templateSource = document.getElementById("services").innerHTML;
   
     let template = Handlebars.compile(templateSource);
 
     let renderedTemplate = template(data);
 
     // Insert the template into the container
-    let container = document.getElementById("services-container");
+    let container = document.getElementById("services");
     container.innerHTML = renderedTemplate;
   </script>
 </body>
