@@ -1,0 +1,7 @@
+curl --request GET \
+  --url https://api.calendly.com/routing_forms \
+  --header 'Authorization: ' \
+  --header 'Content-Type: application/json'
+
+
+  
