@@ -5,10 +5,9 @@ const homeRoute = require('./homeRoute');
 const aboutusRoute = require('./aboutusRoute');
 const servicesRoute = require('./servicesRoute');
 const loginRoute = require('./loginRoute');
-const scheduleRoute = require('./scheduleRoute')
 
 router.use('/api', apiRoutes);
-router.use('/', homeRoute, aboutusRoute, servicesRoute, loginRoute, scheduleRoute)
+router.use('/', homeRoute, aboutusRoute, servicesRoute, loginRoute)
 
 module.exports = router;
 
