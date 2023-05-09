@@ -43,3 +43,75 @@ getUserEvents(token).then(data => {
 }).catch(error => {
   console.error(error);
 });
+
+
+
+{
+  "uri": "https://api.calendly.com/user_availability_schedule/abc123",
+  "default": true,
+  "name": "Working Hours",
+  "user": "https://api.calendly.com/users/abc123",
+  "rules": [
+    {
+      "type": "wday",
+      "intervals": [
+        {
+          "from": "08:30",
+          "to": "17:00"
+        }
+      ],
+      "wday": "monday"
+    },
+    {
+      "type": "wday",
+      "intervals": [
+        {
+          "from": "08:30",
+          "to": "17:00"
+        }
+      ],
+      "wday": "tuesday"
+    },
+    {
+      "type": "wday",
+      "intervals": [],
+      "wday": "wednesday"
+    },
+    {
+      "type": "wday",
+      "intervals": [
+        {
+          "from": "08:30",
+          "to": "17:00"
+        }
+      ],
+      "wday": "thursday"
+    },
+    {
+      "type": "wday",
+      "intervals": [
+        {
+          "from": "08:30",
+          "to": "17:00"
+        }
+      ],
+      "wday": "friday"
+    },
+    {
+      "type": "wday",
+      "intervals": [],
+      "wday": "saturday"
+    },
+    {
+      "type": "date",
+      "intervals": [
+        {
+          "from": "08:30",
+          "to": "09:30"
+        }
+      ],
+      "date": "2028-12-31"
+    }
+  ],
+  "timezone": "America\\/New_York"
+}

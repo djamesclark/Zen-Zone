@@ -38,7 +38,7 @@ Wireframe: https://www.figma.com/file/VzF8BIoswKAuF9hkVCqvw3/Zen-Zone?type=desig
 
 
 
-## Future Usage 
+## Future Features
 //will list app features we'd like to add at a later time 
 
 ## Team 
