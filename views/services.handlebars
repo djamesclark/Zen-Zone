@@ -1,84 +1,29 @@
 <link rel="stylesheet" type="text/css" href="/css/services.css" />
 <html lang="en">
-     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <link rel="stylesheet" type="text/css" href="../../public/css/style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+<link rel="stylesheet" type="text/css" href="/css/style.css" />
+
 <head>
-   <title>Massage Services</title>
+  <title>Massage Services</title>
 </head>
+
 <body>
-  <div id="services-container"></div>
 
-  <script id="services-template" type="text/x-handlebars-template">
-    {{#each services}}
-      <div id="service">
-        <h3>{{title}}</h3>
-        <p>{{description}}</p>
-        <p>Duration: {{duration}} minutes</p>
-        <p>Price: ${{price}}</p>
+  <div class="columns is-centered">
+    <div class="column is-half">
+      {{#each services}}
+      <div class="card my-4">
+        <div class="card-content">
+          <div id="service">
+            <h3>{{title}}</h3>
+            <p>{{description}}</p>
+            <p>Duration: {{duration}} minutes</p>
+            <p>Price: ${{price}}</p>
+          </div>
+        </div>
       </div>
-    {{/each}}
-  </script>
-
-  <script>
-    // Define massage services
-    let data = {
-      services: [
-        {
-          title: "Swedish Massage",
-          description: "Relaxing massage technique that uses long, gliding strokes.",
-          duration: 30,
-          price: 50
-        },
-        {
-          title: "Deep Tissue Massage",
-          description: "Targets deeper layers of muscles and connective tissue to relieve chronic pain.",
-          duration: 30,
-          price: 50
-        },
-        {
-          title: "Hot Stone Massage",
-          description: "Uses smooth, heated stones to relax muscles and improve circulation.",
-          duration: 60,
-          price: 100
-        },
-        {
-          title: "Aromatherapy Massage",
-          description: "Combines massage techinques with essential oils to enhance relation and promote stress relief, mood, and improved sleep.",  
-          duration: 30,
-          price: 50
-        },
-        {
-          title: "Ashiatsu Massage",
-          description: "A barefoot massage technique where the therapist can deliver deep, broad, consistent pressure.",
-          duration: 60,
-          price: 100
-        },
-        {
-          title: "Thai Massage",
-          description: "Incorporates assisted stretching, acupressure, and deep compression to improve flexibility, relieve muscle tension, and promote relaxation.",
-          duration: 60,
-          price: 100
-        },
-        {
-          title: "Relexology Massage",
-          description: "Focuses on applying pressure to specific reflex points on the hands, feet, and ears, which corresponds to different organs and systems in the body.",
-          duration: 30,
-          price: 50
-        },
-      ]
-    };
-
-    // HTML template?
-    let templateSource = document.getElementById("services").innerHTML;
-  
-    let template = Handlebars.compile(templateSource);
-
-    let renderedTemplate = template(data);
-
-    // Insert the template into the container
-    let container = document.getElementById("services");
-    container.innerHTML = renderedTemplate;
-  </script>
+      {{/each}}
+    </div>
+  </div>
 </body>
-
