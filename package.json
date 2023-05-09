@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js", 
+    "watch": "nodemon server.js"
   },
   "author": "",
   "license": "ISC",
@@ -22,5 +23,8 @@
     "mysql2": "^3.2.4",
     "npm": "^9.6.6",
     "sequelize": "^6.31.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
   }
 }
