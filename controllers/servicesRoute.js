@@ -5,45 +5,45 @@ router.get('/services', (req, res)=> {
         services: [
           {
             title: "Swedish Massage",
-            description: "Relaxing massage technique that uses long, gliding strokes.",
-            duration: 30,
-            price: 50
+            description: "This is a gentle and relaxing massage technique that involves long, gliding strokes, kneading, and circular movements to improve circulation and promote relaxation.",
+            duration: 30 - 90,
+            price: 50 - 150
           },
           {
             title: "Deep Tissue Massage",
-            description: "Targets deeper layers of muscles and connective tissue to relieve chronic pain.",
-            duration: 30,
-            price: 50
+            description: "This massage focuses on deeper layers of muscle and connective tissue to address chronic muscle tension, knots, and areas of pain. It uses more intense pressure and slower strokes than Swedish massage.",
+            duration: 30 - 90,
+            price: 50 - 150
           },
           {
             title: "Hot Stone Massage",
-            description: "Uses smooth, heated stones to relax muscles and improve circulation.",
-            duration: 60,
-            price: 100
+            description: "This therapy involves the use of smooth, heated stones placed on specific areas of the body. The warmth of the stones helps to relax muscles, release tension, and promote a sense of well-being.",
+            duration: 60 - 90,
+            price: 100 - 200
           },
           {
             title: "Aromatherapy Massage",
-            description: "Combines massage techinques with essential oils to enhance relation and promote stress relief, mood, and improved sleep.",  
-            duration: 30,
-            price: 50
+            description: "Aromatherapy combines massage techniques with the use of essential oils to enhance relaxation and promote various benefits such as stress relief, mood enhancement, and improved sleep.",  
+            duration: 30 - 90,
+            price: 50 - 150
           },
           {
             title: "Ashiatsu Massage",
-            description: "A barefoot massage technique where the therapist can deliver deep, broad, consistent pressure.",
-            duration: 60,
-            price: 100
+            description: "This is a unique massage technique where the therapist uses their feet to deliver deep, broad, consistent pressure.",
+            duration: 60 - 90,
+            price: 100 - 200 
           },
           {
             title: "Thai Massage",
-            description: "Incorporates assisted stretching, acupressure, and deep compression to improve flexibility, relieve muscle tension, and promote relaxation.",
-            duration: 60,
-            price: 100
+            description: "Thai massage incorporates assisted stretching, acupressure, and deep compression to improve flexibility, relieve muscle tension, and promote relaxation. It is performed on a mat on the floor with the client fully clothed.",
+            duration: 60 - 90,
+            price: 100 - 200
           },
           {
-            title: "Relexology Massage",
-            description: "Focuses on applying pressure to specific reflex points on the hands, feet, and ears, which corresponds to different organs and systems in the body.",
-            duration: 30,
-            price: 50
+            title: "Reflexology Massage",
+            description: "This massage technique focuses on applying pressure to specific reflex points on the hands, feet, and ears, which correspond to different organs and systems in the body. Reflexology aims to promote overall relaxation and balance.",
+            duration: 30 - 90,
+            price: 50 - 150
           },
         ]
       };
