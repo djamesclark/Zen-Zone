@@ -9,7 +9,7 @@ Zen Zone is the ultimate app for those looking for relief through massage therap
 ## Demo
 
 // screenshots from the site
-ScreenCastify Video:<https://drive.google.com/file/d/1VLD0FrA3cpef8QDwqhY9sSHc4B3hFhqu/view>
+ScreenCastify Video:<https://drive.google.com/file/d/1Z-IueX_gEuIkvjLf0J59jmO_9fNyGpHe/view>
 
 ## Site
 
@@ -35,7 +35,7 @@ Wireframe: <https://www.figma.com/file/VzF8BIoswKAuF9hkVCqvw3/Zen-Zone?type=desi
 
 ## Future Usage
 
-//will list app features we'd like to add at a later time
+A drop down menu for duration options, appointment history, pain tracker, preferred providers, as well as advanced cancellation options.
 
 ## Team
 
